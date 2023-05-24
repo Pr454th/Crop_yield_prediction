@@ -10,7 +10,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)# interface between my server and my application wsgi
 
 import pickle
-model = pickle.load(open(r'C:/Users/Arunagiri.S.S/Desktop/Notes/sem 6/DA and CC lab/flask/model.pkl','rb'))
+model = pickle.load(open(r'model.pkl','rb'))
 
 @app.route('/')#binds to an url
 def helloworld():
